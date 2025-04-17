@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Safwa University PRD',
-  tagline: 'Product Requirements Documentation',
+  title: 'كلية العلوم الشرعية والعربية',
+  tagline: '',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -28,8 +28,13 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ar',
+    locales: ['ar'],
+    localeConfigs: {
+      ar: {
+        direction: 'rtl',
+      },
+    },
   },
 
   presets: [
@@ -69,19 +74,12 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/social-card.jpg',
     navbar: {
-      title: 'Safwa University PRD',
+      title: 'كلية العلوم الشرعية والعربية',
       logo: {
-        alt: 'Safwa University Logo',
-        src: 'img/logo.svg',
+        alt: 'كلية العلوم الشرعية والعربية',
+        src: 'img/image.png',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Documentation',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/ahmedhosnypro/SUR',
           label: 'GitHub',

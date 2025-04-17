@@ -9,3 +9,12 @@
   height: 200px;
   width: 200px;
 }
+
+/* RTL support for features */
+:global(html[dir='rtl']) .features {
+  direction: rtl;
+}
+
+:global(html[dir='rtl']) .features > div {
+  text-align: right;
+}
